@@ -1,0 +1,8 @@
+{
+  "name": "SPIN GAMBO LIN",
+  "description": "SPIN GAMBO LIN — Transparent, provably fair Spin & Win gaming platform with interactive wheel physics, Web Audio sound effects, player accounts, and live admin prize controls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

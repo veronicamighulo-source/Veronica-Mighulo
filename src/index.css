@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Outfit", system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+@keyframes spinGlow {
+  0%, 100% {
+    box-shadow: 0 0 24px rgba(245, 158, 11, 0.45), 0 0 48px rgba(16, 185, 129, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 36px rgba(251, 191, 36, 0.72), 0 0 64px rgba(16, 185, 129, 0.35);
+  }
+}
+
+.spin-btn-glow {
+  animation: spinGlow 2.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spin-btn-glow {
+    animation: none;
+  }
+}
